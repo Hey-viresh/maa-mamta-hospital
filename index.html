@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Maa Mamta Hospital — Care for Every Mother, Love for Every Child</title>
+  <meta name="description" content="Maa Mamta Hospital — trusted maternity & child care in Khurja. 24/7 emergency, expert gynecologists, NICU, IVF & newborn care." />
+  <meta name="keywords" content="Maternity Hospital Khurja, Best Maternity Hospital, NICU, Gynecology, IVF, Mother & Child Care" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Maa Mamta Hospital — Care for Every Mother, Love for Every Child" />
+  <meta property="og:description" content="Trusted maternity & child care in Khurja. 24/7 Emergency, NICU, Experienced Doctors." />
+  <meta property="og:image" content="https://source.unsplash.com/1200x630/?maternity,hospital,baby" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google font & icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2d9b6d9f3.js" crossorigin="anonymous"></script>
+
+  <style>
+    :root{
+      --bg:#f8fafc; --card:#ffffff; --muted:#6b7280; --accent:#1976d2; --accent-2:#ff7ba0; --radius:14px;
+      --container:1100px; --max-width:1200px; font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#ffffff);color:#111827;-webkit-font-smoothing:antialiased}
+    a{color:inherit}
+    .container{max-width:var(--container);margin:0 auto;padding:28px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    .brand h1{margin:0;font-size:18px}
+    nav{display:flex;gap:18px;align-items:center}
+    nav a{padding:8px 12px;border-radius:10px;font-weight:600;color:var(--muted);text-decoration:none}
+    nav a.cta{background:var(--accent);color:#fff}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 460px;gap:28px;align-items:center;padding:28px 0}
+    .hero-card{background:var(--card);border-radius:var(--radius);padding:28px;box-shadow:0 6px 30px rgba(16,24,40,0.06)}
+    .hero h2{margin:0 0 8px;font-size:28px}
+    .hero p{color:var(--muted);margin:0 0 16px}
+    .hero .buttons{display:flex;gap:12px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:12px;font-weight:700;text-decoration:none}
+    .btn-primary{background:var(--accent);color:#fff}
+    .btn-ghost{background:transparent;border:1px solid #e6eefc;color:var(--accent)}
+
+    .hero-image{border-radius:12px;overflow:hidden;box-shadow:0 6px 30px rgba(16,24,40,0.08)}
+    .hero-image img{width:100%;height:100%;display:block;object-fit:cover}
+
+    /* Quick info */
+    .quick{display:flex;gap:10px;margin-top:14px}
+    .chip{background:#f1f7ff;padding:8px 12px;border-radius:999px;color:var(--accent);font-weight:700}
+
+    /* Services */
+    .section{margin:40px 0}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .service{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.04)}
+    .service h4{margin:8px 0}
+    .service p{color:var(--muted);margin:0}
+    .icon{font-size:22px;padding:10px;border-radius:10px;background:#f8fbff;display:inline-flex;align-items:center;justify-content:center}
+
+    /* Doctors */
+    .doctors-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .doctor{background:linear-gradient(180deg,#fff,#fbfdff);padding:16px;border-radius:12px;display:flex;gap:12px;align-items:center}
+    .avatar{width:76px;height:76px;border-radius:12px;overflow:hidden;flex-shrink:0}
+    .avatar img{width:100%;height:100%;object-fit:cover}
+    .doc-info h5{margin:0;font-size:16px}
+    .doc-info p{margin:6px 0 0;color:var(--muted);font-size:14px}
+
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+    .gallery img{width:100%;height:160px;object-fit:cover;border-radius:10px}
+
+    /* Testimonials */
+    .testi{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .test{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 8px 30px rgba(16,24,40,0.04)}
+    .test p{color:var(--muted)}
+    .person{display:flex;align-items:center;gap:12px;margin-top:12px}
+    .person img{width:48px;height:48px;border-radius:50%;object-fit:cover}
+
+    /* Blog */
+    .blogs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .blog{background:var(--card);border-radius:12px;overflow:hidden}
+    .blog img{width:100%;height:160px;object-fit:cover}
+    .blog-content{padding:12px}
+
+    /* Footer */
+    footer{margin-top:40px;padding:28px;background:transparent}
+    footer .grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:20px}
+    .small{font-size:14px;color:var(--muted)}
+
+    /* Responsive */
+    @media (max-width:1000px){
+      .hero{grid-template-columns:1fr;}
+      .cards{grid-template-columns:repeat(2,1fr)}
+      .doctors-grid{grid-template-columns:repeat(2,1fr)}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+      .testi{grid-template-columns:1fr}
+      .blogs{grid-template-columns:1fr}
+      nav{display:none}
+    }
+    @media (max-width:520px){
+      .cards{grid-template-columns:1fr}
+      header{padding:12px 0}
+      .logo{width:48px;height:48px}
+    }
+
+    /* small helpers */
+    .muted{color:var(--muted)}
+    .center{text-align:center}
+    .badge{display:inline-block;padding:6px 10px;background:#f8fbff;border-radius:999px;font-weight:700;color:var(--accent)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">MM</div>
+        <div>
+          <h1>Maa Mamta Hospital</h1>
+          <div class="small">Care for Every Mother, Love for Every Child</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#doctors">Doctors</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact" class="cta">Book Appointment</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-card">
+        <div class="chip">Established 2024 • Khurja</div>
+        <h2>Trusted maternity &amp; child care in Khurja</h2>
+        <p>24/7 Emergency • Modern NICU • Experienced Gynecologists &amp; Pediatricians. We ensure safe motherhood and healthy babies with compassionate, evidence-based care.</p>
+        <div class="buttons">
+          <a href="tel:+919876543210" class="btn btn-primary"><i class="fa-solid fa-phone"></i> Call Now</a>
+          <a href="#contact" class="btn btn-ghost"><i class="fa-solid fa-calendar-check"></i> Book Appointment</a>
+        </div>
+
+        <div class="quick">
+          <div class="badge">24/7 Emergency &amp; Ambulance</div>
+          <div class="badge">Experienced Doctors</div>
+          <div class="badge">NICU &amp; Baby Care</div>
+        </div>
+
+        <hr style="margin:18px 0;border:none;border-top:1px solid #eef3fb">
+        <strong>Contact</strong>
+        <div class="muted">Phone: <a href="tel:+919876543210">+91 98765 43210</a> • WhatsApp: <a href="https://wa.me/919876543210" target="_blank">+91 98765 43210</a></div>
+      </div>
+
+      <div class="hero-image">
+        <img src="https://source.unsplash.com/800x600/?maternity,hospital,baby" alt="Maternity care at Maa Mamta Hospital">
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+      <h3>Our Services</h3>
+      <p class="muted">Comprehensive care for mothers & newborns — tailored, safe and compassionate.</p>
+      <div class="cards" style="margin-top:14px">
+        <div class="service">
+          <div class="icon"><i class="fa-solid fa-baby-carriage"></i></div>
+          <h4>Normal & Cesarean Deliveries</h4>
+          <p>High-standard labour rooms with experienced obstetricians and painless delivery options.</p>
+        </div>
+        <div class="service">
+          <div class="icon"><i class="fa-solid fa-stethoscope"></i></div>
+          <h4>Antenatal & Postnatal Care</h4>
+          <p>Regular checkups, ultrasounds, counseling and post-delivery recovery support.</p>
+        </div>
+        <div class="service">
+          <div class="icon"><i class="fa-solid fa-hospital-user"></i></div>
+          <h4>Gynecology & Fertility Treatments</h4>
+          <p>Expert care for women's health and infertility management including IVF consultations.</p>
+        </div>
+        <div class="service">
+          <div class="icon"><i class="fa-solid fa-cradle"></i></div>
+          <h4>Neonatal ICU (NICU)</h4>
+          <p>Modern NICU with thermal control, ventilators and trained neonatal staff for critical newborn care.</p>
+        </div>
+        <div class="service">
+          <div class="icon"><i class="fa-solid fa-apple-whole"></i></div>
+          <h4>Nutrition & Counseling</h4>
+          <p>Diet plans, breastfeeding support, and mental health counseling for new mothers.</p>
+        </div>
+        <div class="service">
+          <div class="icon"><i class="fa-solid fa-ambulance"></i></div>
+          <h4>24/7 Emergency & Ambulance</h4>
+          <p>Rapid response for emergencies with trained staff and ambulance support.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Doctors -->
+    <section id="doctors" class="section">
+      <h3>Our Doctors</h3>
+      <p class="muted">Compassionate experts with years of experience in maternal & neonatal care.</p>
+      <div class="doctors-grid" style="margin-top:14px">
+        <div class="doctor">
+          <div class="avatar"><img src="https://source.unsplash.com/300x300/?female-doctor" alt="Dr. Neha Sharma"></div>
+          <div class="doc-info">
+            <h5>Dr. Neha Sharma</h5>
+            <p>MBBS, MD — Gynecology & Obstetrics • 15 years experience</p>
+            <div class="small muted">Specialist in high-risk pregnancy & painless deliveries</div>
+          </div>
+        </div>
+        <div class="doctor">
+          <div class="avatar"><img src="https://source.unsplash.com/300x300/?male-doctor,pediatrician" alt="Dr. Rakesh Verma"></div>
+          <div class="doc-info">
+            <h5>Dr. Rakesh Verma</h5>
+            <p>MBBS, DCH — Pediatrics & Neonatology • 12 years experience</p>
+            <div class="small muted">NICU care, newborn resuscitation & breastfeeding support</div>
+          </div>
+        </div>
+        <div class="doctor">
+          <div class="avatar"><img src="https://source.unsplash.com/300x300/?doctor,female" alt="Dr. Priya Singh"></div>
+          <div class="doc-info">
+            <h5>Dr. Priya Singh</h5>
+            <p>MBBS, MS — Infertility & IVF Specialist • 10 years experience</p>
+            <div class="small muted">IVF counselling, fertility treatment & patient-centric care</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section">
+      <h3>Gallery</h3>
+      <p class="muted">A glimpse inside our maternity ward, NICU and happy families.</p>
+      <div class="gallery" style="margin-top:12px">
+        <img src="https://source.unsplash.com/400x300/?hospital-building" alt="Hospital building">
+        <img src="https://source.unsplash.com/400x300/?maternity-ward" alt="Maternity ward">
+        <img src="https://source.unsplash.com/400x300/?NICU" alt="NICU">
+        <img src="https://source.unsplash.com/400x300/?happy-mother-baby" alt="Happy mother and baby">
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section">
+      <h3>Patient Stories</h3>
+      <p class="muted">Real stories from families who trusted Maa Mamta Hospital.</p>
+      <div class="testi" style="margin-top:14px">
+        <div class="test">
+          <p>“I had a high-risk pregnancy, but thanks to Dr. Neha Sharma and her team, everything went smoothly. The NICU facilities are excellent and gave me peace of mind.”</p>
+          <div class="person"><img src="https://source.unsplash.com/100x100/?woman,portrait" alt="Sunita Yadav"><div><strong>Sunita Yadav</strong><div class="small muted">Patient</div></div></div>
+        </div>
+        <div class="test">
+          <p>“We had been struggling with infertility for years. With Dr. Priya Singh’s IVF treatment, we are now blessed with a baby boy. Maa Mamta Hospital is a blessing for us.”</p>
+          <div class="person"><img src="https://source.unsplash.com/100x100/?couple,portrait" alt="Rohit & Priya Gupta"><div><strong>Rohit & Priya Gupta</strong><div class="small muted">Patient</div></div></div>
+        </div>
+        <div class="test">
+          <p>“The nurses were so caring, and the hospital felt like home. I am thankful for the support during my normal delivery. Highly recommended for safe motherhood.”</p>
+          <div class="person"><img src="https://source.unsplash.com/100x100/?woman-smile" alt="Meena Kumari"><div><strong>Meena Kumari</strong><div class="small muted">Patient</div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="section">
+      <h3>From Our Blog</h3>
+      <p class="muted">Helpful articles & tips for new mothers and families.</p>
+      <div class="blogs" style="margin-top:12px">
+        <article class="blog">
+          <img src="https://source.unsplash.com/600x400/?pregnancy,tips" alt="Pregnancy tips">
+          <div class="blog-content">
+            <h4>Top 10 Pregnancy Tips for Mothers</h4>
+            <p class="muted">Regular check-ups, balanced diet, folic acid, and gentle exercises. Read more for tips from our experts.</p>
+            <a href="#" class="small">Read more →</a>
+          </div>
+        </article>
+        <article class="blog">
+          <img src="https://source.unsplash.com/600x400/?nutrition,pregnancy" alt="Nutrition in pregnancy">
+          <div class="blog-content">
+            <h4>Why Nutrition is Important During Pregnancy</h4>
+            <p class="muted">Good nutrition supports healthy development & reduces delivery complications. Our nutritionists share a simple plan.</p>
+            <a href="#" class="small">Read more →</a>
+          </div>
+        </article>
+        <article class="blog">
+          <img src="https://source.unsplash.com/600x400/?baby-care,newborn" alt="Baby care">
+          <div class="blog-content">
+            <h4>Baby Care in the First 6 Months</h4>
+            <p class="muted">Exclusive breastfeeding, vaccinations, and bonding tips from our pediatricians.</p>
+            <a href="#" class="small">Read more →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h3>Contact & Book Appointment</h3>
+      <p class="muted">Call or book an appointment online. For urgent cases use our emergency number.</p>
+      <div style="display:grid;grid-template-columns:1fr 380px;gap:18px;margin-top:12px">
+        <form style="background:var(--card);padding:18px;border-radius:12px;box-shadow:0 8px 20px rgba(16,24,40,0.04)" onsubmit="submitForm(event)">
+          <label class="small">Name</label>
+          <input required name="name" type="text" placeholder="Your name" style="width:100%;padding:10px;margin:6px 0 12px;border-radius:8px;border:1px solid #eef3fb">
+          <label class="small">Phone</label>
+          <input required name="phone" type="tel" placeholder="Phone number" style="width:100%;padding:10px;margin:6px 0 12px;border-radius:8px;border:1px solid #eef3fb">
+          <label class="small">Preferred Doctor (optional)</label>
+          <select name="doctor" style="width:100%;padding:10px;margin:6px 0 12px;border-radius:8px;border:1px solid #eef3fb">
+            <option>Any Available Doctor</option>
+            <option>Dr. Neha Sharma</option>
+            <option>Dr. Rakesh Verma</option>
+            <option>Dr. Priya Singh</option>
+          </select>
+          <label class="small">Preferred Date & Time</label>
+          <input type="datetime-local" name="datetime" style="width:100%;padding:10px;margin:6px 0 12px;border-radius:8px;border:1px solid #eef3fb">
+          <button class="btn btn-primary" style="border:none;cursor:pointer">Submit Appointment</button>
+        </form>
+
+        <div style="background:var(--card);padding:18px;border-radius:12px;box-shadow:0 8px 20px rgba(16,24,40,0.04)">
+          <h4>Hospital Info</h4>
+          <p class="small muted">Maa Mamta Hospital<br>Murali Nagar, New Shiv Puri, Khurja, Bulandshahr, UP - 203131</p>
+          <p class="small"><strong>Emergency:</strong> <a href="tel:+919876543210">+91 98765 43210</a></p>
+          <p class="small"><strong>Email:</strong> <a href="mailto:contact@maamamta.com">contact@maamamta.com</a></p>
+          <div style="margin-top:12px">
+            <iframe src="https://www.google.com/maps?q=Khurja+Bulandshahr+UP&output=embed" width="100%" height="200" style="border:0;border-radius:10px" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="grid">
+        <div>
+          <h4>Maa Mamta Hospital</h4>
+          <p class="small muted">Care for Every Mother, Love for Every Child — Trusted maternity & child care centre serving Khurja and nearby regions.</p>
+          <p class="small">© <span id="year"></span> Maa Mamta Hospital — All rights reserved.</p>
+        </div>
+        <div>
+          <h5>Quick Links</h5>
+          <ul style="padding-left:16px;margin-top:8px">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#doctors">Doctors</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Contact</h5>
+          <p class="small">Phone: <a href="tel:+919876543210">+91 98765 43210</a></p>
+          <p class="small">Email: <a href="mailto:contact@maamamta.com">contact@maamamta.com</a></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function submitForm(e){
+      e.preventDefault();
+      const form = e.target;
+      // Basic UX-only form handling: open mailto with summary (no backend)
+      const name = form.name.value || 'Patient';
+      const phone = form.phone.value || '';
+      const doctor = form.doctor.value || 'Any';
+      const datetime = form.datetime.value || 'As soon as possible';
+      const subject = encodeURIComponent('Appointment Request - Maa Mamta Hospital');
+      const body = encodeURIComponent(`Name: ${name}\nPhone: ${phone}\nDoctor: ${doctor}\nPreferred: ${datetime}`);
+      const mailto = `mailto:appointments@maamamta.com?subject=${subject}&body=${body}`;
+      window.location.href = mailto;
+      alert('Thanks! Your appointment request draft opened in email. You can send it or contact us at +91 98765 43210');
+      form.reset();
+    }
+  </script>
+
+  <!-- Structured data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalOrganization",
+    "name": "Maa Mamta Hospital",
+    "url": "https://example.com",
+    "logo": "https://source.unsplash.com/600x300/?hospital,logo",
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "telephone": "+91 98765 43210",
+      "contactType": "customer service",
+      "areaServed": "IN",
+      "availableLanguage": ["Hindi","English"]
+    }],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Murali Nagar, New Shiv Puri, Kila Road",
+      "addressLocality": "Khurja",
+      "addressRegion": "Uttar Pradesh",
+      "postalCode": "203131",
+      "addressCountry": "IN"
+    }
+  }
+  </script>
+</body>
+</html>
